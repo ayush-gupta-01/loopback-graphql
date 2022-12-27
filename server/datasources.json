@@ -1,10 +1,14 @@
 {
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
   "ds": {
     "host": "localhost",
     "port": 3306,
     "url": "",
-    "database": "graphqloopback",
-    "password": "ayush",
+    "database": "loopbackgql",
+    "password": "admin",
     "name": "ds",
     "user": "root",
     "connector": "mysql"

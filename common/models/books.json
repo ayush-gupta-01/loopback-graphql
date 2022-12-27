@@ -1,5 +1,5 @@
 {
-  "name": "user",
+  "name": "books",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,19 +8,14 @@
   "properties": {
     "id": {
       "type": "number",
-      "required": true,
-      "default": 1
+      "required": true
     },
-    "name": {
+    "bookname": {
       "type": "string",
       "required": true
     },
-    "email": {
-      "type": "string",
-      "required": true
-    },
-    "password": {
-      "type": "string",
+    "authorid": {
+      "type": "number",
       "required": true
     }
   },
