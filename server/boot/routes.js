@@ -1,11 +1,13 @@
-'use strict';
+const express = require("express");
+const app = require("../server");
+var { graphqlHTTP } = require("express-graphql");
+var { buildSchema } = require("graphql");
+const schema = require("../../common/schema");
 
-const { register, login } = require("./controllers/auth/index")
-
-module.exports = function (app) {
-    const router = app.loopback.Router()
-
-    router.post("/api/v1/register", register)
-
-    app.use(router);
-}
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema,
+    graphiql: true,
+  })
+);

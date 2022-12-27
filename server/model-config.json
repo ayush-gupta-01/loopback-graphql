@@ -13,12 +13,34 @@
       "./mixins"
     ]
   },
-  "user": {
+  "User": {
+    "dataSource": "ds"
+  },
+  "AccessToken": {
+    "dataSource": "ds",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "ds",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "ds",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "ds",
+    "public": false
+  },
+  "books": {
     "dataSource": "ds",
     "public": true
   },
-  "todos": {
+  "author": {
     "dataSource": "ds",
-    "public": false
+    "public": true
   }
 }
